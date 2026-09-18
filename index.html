@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InDesign Academy — Learn InDesign. Build Real Things.</title>
+<meta name="description" content="A self-paced, interactive learning system for mastering Adobe InDesign — lessons, practice, real projects, and progress tracking.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="app-shell">
+  <div class="sidebar-scrim" id="sidebar-scrim"></div>
+
+  <nav class="sidebar" id="sidebar" aria-label="Course navigation">
+    <a href="#/home" class="brand"><span class="mark">◆</span> InDesign Academy</a>
+    <div class="tagline">Learn InDesign. Build Real Things.</div>
+
+    <div class="sidebar-progress">
+      <div class="label">InDesign Mastery</div>
+      <div class="progress-row">
+        <div class="progress-track"><div class="progress-fill" id="sidebar-progress-fill" style="width:0%"></div></div>
+        <span class="pct" id="sidebar-progress-pct">0%</span>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-label">COURSE</div>
+      <div id="nav-levels"></div>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-label">PRACTICE &amp; BUILD</div>
+      <a class="nav-link" href="#/practice"><span class="num">▸</span> Practice Hub</a>
+      <a class="nav-link" href="#/projects"><span class="num">▸</span> Project Studio</a>
+      <a class="nav-link" href="#/daily"><span class="num">▸</span> Daily Practice</a>
+      <a class="nav-link" href="#/diagnostics"><span class="num">▸</span> Fix This Design</a>
+      <a class="nav-link" href="#/recreate"><span class="num">▸</span> Recreate This Design</a>
+      <a class="nav-link" href="#/skills"><span class="num">▸</span> Skill Tree</a>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-label">REFERENCE</div>
+      <a class="nav-link" href="#/glossary"><span class="num">▸</span> Terminology</a>
+      <a class="nav-link" href="#/shortcuts"><span class="num">▸</span> Cheat Sheet</a>
+      <a class="nav-link" href="#/troubleshooting"><span class="num">▸</span> Troubleshooting</a>
+      <a class="nav-link" href="#/achievements"><span class="num">▸</span> Achievements</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="topbar">
+      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input type="search" id="search-input" placeholder="Search lessons, shortcuts, glossary…" aria-label="Search InDesign Academy" autocomplete="off">
+        <div class="search-results" id="search-results"></div>
+      </div>
+      <button class="icon-btn" id="theme-btn" title="Toggle light / dark" aria-label="Toggle theme">◐</button>
+      <button class="icon-btn" id="reset-btn" title="Reset progress" aria-label="Reset progress">↺</button>
+    </div>
+
+    <div id="content"></div>
+
+    <footer class="page-footer">
+      <span>InDesign Academy — progress is stored locally in your browser.</span>
+      <span><a href="#/troubleshooting">Need help?</a></span>
+    </footer>
+  </main>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/lessons.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/exercises.js"></script>
+<script src="js/glossary.js"></script>
+<script src="js/shortcuts.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

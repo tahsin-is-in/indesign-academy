@@ -1,0 +1,20 @@
+{
+  "levels": [
+    { "id": "L0", "number": "00", "title": "Orientation", "summary": "The interface, documents, pages, and how InDesign thinks.", "lessonIds": ["orientation-01", "orientation-02"], "projectIds": [] },
+    { "id": "L1", "number": "01", "title": "Fundamentals", "summary": "Frames, text, images, and your first real layouts.", "lessonIds": ["fundamentals-01", "fundamentals-02", "fundamentals-03"], "projectIds": ["business-card", "flyer", "poster"] },
+    { "id": "L2", "number": "02", "title": "Typography", "summary": "Leading, tracking, kerning, and building hierarchy.", "lessonIds": ["typography-01", "typography-02"], "projectIds": [] },
+    { "id": "L3", "number": "03", "title": "Layout & Composition", "summary": "Grids, whitespace, rhythm, and why layouts work.", "lessonIds": ["layout-01"], "projectIds": ["menu"] },
+    { "id": "L4", "number": "04", "title": "Parent Pages", "summary": "Templates for pages: headers, footers, page numbers.", "lessonIds": ["parentpages-01"], "projectIds": [] },
+    { "id": "L5", "number": "05", "title": "Styles", "summary": "Paragraph, character, and object styles at scale.", "lessonIds": ["styles-01"], "projectIds": [] },
+    { "id": "L6", "number": "06", "title": "Long Documents", "summary": "Books, TOCs, footnotes, and threaded text.", "lessonIds": ["longdocs-01"], "projectIds": [] },
+    { "id": "L7", "number": "07", "title": "Tables", "summary": "Structured data, styled rows, and imported spreadsheets.", "lessonIds": ["tables-01"], "projectIds": [] },
+    { "id": "L8", "number": "08", "title": "Images & Graphics", "summary": "Linking, fitting, text wrap, and resolution.", "lessonIds": ["images-01"], "projectIds": [] },
+    { "id": "L9", "number": "09", "title": "Color", "summary": "RGB vs CMYK, swatches, and print-safe color.", "lessonIds": ["color-01"], "projectIds": [] },
+    { "id": "L10", "number": "10", "title": "Print Production", "summary": "Bleed, preflight, and getting files press-ready.", "lessonIds": ["print-01"], "projectIds": ["brochure"] },
+    { "id": "L11", "number": "11", "title": "Interactive PDFs", "summary": "Buttons, links, and PDFs built to be used on screen.", "lessonIds": ["interactive-01"], "projectIds": [] },
+    { "id": "L12", "number": "12", "title": "Advanced InDesign", "summary": "GREP, conditional text, and power-user workflows.", "lessonIds": ["advanced-01"], "projectIds": [] },
+    { "id": "L13", "number": "13", "title": "Automation", "summary": "Data Merge and removing repetitive work.", "lessonIds": ["automation-01"], "projectIds": [] },
+    { "id": "L14", "number": "14", "title": "Project Studio", "summary": "Real client-style briefs, beginner to advanced.", "lessonIds": [], "projectIds": ["business-card", "flyer", "poster", "menu", "brochure"] },
+    { "id": "L15", "number": "15", "title": "Capstone", "summary": "One complete professional publication, start to finish.", "lessonIds": [], "projectIds": [] }
+  ]
+}

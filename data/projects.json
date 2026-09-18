@@ -1,0 +1,108 @@
+[
+  {
+    "id": "business-card",
+    "title": "Business Card",
+    "difficulty": "Beginner",
+    "client": "Studio Almendra",
+    "brief": "A boutique letterpress studio needs a clean, confident business card that reflects their craft \u2014 minimal, typographic, print-ready.",
+    "dimensions": "3.5 x 2 in (89 x 51 mm), 0.125 in bleed",
+    "requirements": ["Name, title, and contact info", "Studio logo or wordmark (type-based is fine)", "1\u20132 fonts maximum", "CMYK color mode", "Bleed extended to edges if using a background color"],
+    "skills": ["Frames", "Typography", "Bleed", "Color"],
+    "steps": [
+      "Create a new document at 3.5 x 2 in with 0.125 in bleed on all sides.",
+      "Block out a simple hierarchy: name (largest), title (smaller), contact details (smallest).",
+      "Choose one typeface, using weight (not multiple fonts) to create contrast.",
+      "If using a background color, extend it fully into the bleed area.",
+      "Export a print-ready PDF with marks and bleed included."
+    ],
+    "checklist": ["Text fits comfortably within the safe margin", "Only 1\u20132 fonts used", "Background color (if any) extends into bleed", "Exported as print PDF with bleed marks"],
+    "commonMistakes": ["Text placed too close to the trim edge", "Using more than 2 typefaces", "Forgetting to extend background color to bleed"],
+    "finalChallenge": "Design two variants \u2014 one with a colored background, one white \u2014 using the exact same type hierarchy, to see how strong your hierarchy really is without relying on color.",
+    "deliverables": ["INDD", "Print-ready PDF"]
+  },
+  {
+    "id": "flyer",
+    "title": "Event Flyer",
+    "difficulty": "Beginner",
+    "client": "Dhaka Design Conference",
+    "brief": "Create an A4 promotional flyer announcing a one-day design conference, built to be printed and handed out at partner venues.",
+    "dimensions": "A4 portrait (210 x 297 mm), 3 mm bleed",
+    "requirements": ["Event name, date, location", "Speaker names", "Registration info or QR code placeholder", "Clear visual hierarchy", "Maximum 2 fonts"],
+    "skills": ["Typography", "Hierarchy", "Layout", "Images"],
+    "steps": [
+      "Set up an A4 document with 3mm bleed.",
+      "Establish a 3-level hierarchy: event name, date/location, supporting details.",
+      "Place a hero image or bold color block to anchor the top third of the page.",
+      "Add a registration call-to-action near the bottom, visually separated from other content.",
+      "Preflight and export a print-ready PDF."
+    ],
+    "checklist": ["3-level hierarchy is clearly visible", "All required info present (name, date, location, speakers, registration)", "Preflight panel shows zero errors", "Bleed correctly extended"],
+    "commonMistakes": ["Cramming too much text with no breathing room", "Weak contrast between the event name and supporting details", "Missing bleed on background elements"],
+    "finalChallenge": "Redesign your flyer for a second event with completely different content, reusing your layout structure and paragraph styles to prove the system holds up.",
+    "deliverables": ["INDD", "PDF", "Print-ready PDF"]
+  },
+  {
+    "id": "poster",
+    "title": "One-Page Poster",
+    "difficulty": "Beginner",
+    "client": "City Jazz Festival",
+    "brief": "A striking single-image poster for a jazz festival, meant to work at a glance from across a room.",
+    "dimensions": "A3 portrait (297 x 420 mm), 3 mm bleed",
+    "requirements": ["One dominant visual element (image or bold typography)", "Festival name as the clear focal point", "Date and venue", "Minimal supporting text"],
+    "skills": ["Composition", "Hierarchy", "Whitespace"],
+    "steps": [
+      "Set up an A3 document with bleed.",
+      "Choose one dominant element \u2014 either a large image or oversized type \u2014 as the focal point.",
+      "Keep supporting text minimal: date, venue, and nothing else.",
+      "Use generous whitespace; resist the urge to fill every area.",
+      "Export a print-ready PDF."
+    ],
+    "checklist": ["Poster reads clearly from a distance", "Only essential text included", "Strong single focal point", "Bleed extended correctly"],
+    "commonMistakes": ["Adding too much supporting text out of habit", "Competing focal points instead of one clear hero element", "Small type that won't be legible at poster viewing distance"],
+    "finalChallenge": "Print (or export at 100%) and view your poster from 3 meters away. If the name isn't instantly legible, revise the hierarchy.",
+    "deliverables": ["INDD", "Print-ready PDF"]
+  },
+  {
+    "id": "menu",
+    "title": "Restaurant Menu",
+    "difficulty": "Intermediate",
+    "client": "Café Meridian",
+    "brief": "A single-fold two-panel menu for a neighborhood café, organized into clear sections with prices.",
+    "dimensions": "A4 landscape, folds to A5, 3 mm bleed",
+    "requirements": ["3+ menu sections (e.g. Starters, Mains, Drinks)", "Consistent price alignment", "A column grid", "Paragraph styles for section headers, item names, and descriptions"],
+    "skills": ["Grids", "Paragraph Styles", "Tabs", "Layout"],
+    "steps": [
+      "Set up an A4 landscape document with a 2-column grid (one per panel) and bleed.",
+      "Create paragraph styles for: Section Header, Item Name, Item Description, Price.",
+      "Use a right-aligned tab stop with a leader (dotted line) to align prices consistently.",
+      "Apply styles consistently across every section.",
+      "Fold-test by printing at reduced size to confirm panels read correctly."
+    ],
+    "checklist": ["All prices align using a tab leader, not spaces", "4 distinct paragraph styles created and applied", "Sections are visually separated and easy to scan", "Layout works correctly when folded"],
+    "commonMistakes": ["Aligning prices with spacebar instead of tabs, causing uneven columns", "Inconsistent spacing between menu items", "Not testing how content reads once folded"],
+    "finalChallenge": "Add a seasonal specials section using your existing styles only \u2014 no new manual formatting \u2014 to prove your style system scales.",
+    "deliverables": ["INDD", "PDF", "Print-ready PDF"]
+  },
+  {
+    "id": "brochure",
+    "title": "Tri-Fold Brochure",
+    "difficulty": "Advanced",
+    "client": "Northbound Travel Co.",
+    "brief": "A print-ready tri-fold brochure promoting a travel package, requiring full preflight and press-ready export.",
+    "dimensions": "A4 landscape, 3 panels, 3 mm bleed",
+    "requirements": ["3 folded panels with distinct content per panel", "Cover panel, inside spread, back panel", "At least 2 images with text wrap", "Full preflight with zero errors", "Print-ready PDF/X export"],
+    "skills": ["Print Production", "Preflight", "Text Wrap", "Bleed", "Color"],
+    "steps": [
+      "Set up guides marking the 3 fold panels (roughly 99mm each on A4 landscape).",
+      "Design a cover panel with the destination name as the focal point.",
+      "Design the inside spread with itinerary details, using text wrap around at least one image.",
+      "Design the back panel with contact info and a call to action.",
+      "Set bleed, run Preflight, and fix all warnings.",
+      "Export as PDF/X-4 with marks and bleed for commercial printing."
+    ],
+    "checklist": ["Content respects fold lines (no important text crossing a fold)", "Preflight shows zero errors", "Images are all 300+ effective PPI", "Exported as PDF/X for print"],
+    "commonMistakes": ["Important text or logos sitting exactly on a fold line", "Skipping the preflight check before export", "Using screen-resolution images pulled from the web"],
+    "finalChallenge": "Fully preflight your file against a custom profile requiring 300 PPI minimum and zero missing fonts, and fix every flagged issue before export.",
+    "deliverables": ["INDD", "Print-ready PDF/X"]
+  }
+]

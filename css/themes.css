@@ -1,0 +1,87 @@
+/* ============================================================
+   InDesign Academy — Design Tokens
+   Editorial / print-production inspired: paper, ink, registration-mark red.
+   ============================================================ */
+
+:root {
+  /* ---- Color: light (default) ---- */
+  --paper: #f1f0ea;
+  --surface: #ffffff;
+  --surface-2: #e9e7de;
+  --ink: #17181c;
+  --ink-soft: #55565c;
+  --ink-faint: #8b8c8f;
+  --line: #d7d5cb;
+  --line-strong: #b9b7ab;
+  --accent: #cc2b52;
+  --accent-ink: #ffffff;
+  --accent-soft: #f6dce2;
+  --accent-2: #1c6e64;
+  --accent-2-soft: #d9eae7;
+  --warn: #a15b00;
+  --warn-soft: #f3e2c4;
+
+  /* ---- Type ---- */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* ---- Scale ---- */
+  --step-1: clamp(0.82rem, 0.78rem + 0.2vw, 0.88rem);
+  --step0: clamp(0.95rem, 0.9rem + 0.25vw, 1rem);
+  --step1: clamp(1.1rem, 1rem + 0.5vw, 1.25rem);
+  --step2: clamp(1.35rem, 1.15rem + 0.9vw, 1.7rem);
+  --step3: clamp(1.7rem, 1.35rem + 1.6vw, 2.3rem);
+  --step4: clamp(2.2rem, 1.6rem + 2.8vw, 3.4rem);
+
+  /* ---- Layout ---- */
+  --radius: 3px;
+  --sidebar-w: 260px;
+  --content-max: 780px;
+  --shadow: 0 1px 0 rgba(23,24,28,0.06);
+
+  --motion: 180ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131315;
+    --surface: #1b1b1e;
+    --surface-2: #232326;
+    --ink: #ece9e2;
+    --ink-soft: #b3b0a8;
+    --ink-faint: #7c7a75;
+    --line: #313134;
+    --line-strong: #414144;
+    --accent: #ff5c7f;
+    --accent-ink: #131315;
+    --accent-soft: #3a1d26;
+    --accent-2: #4fc9ba;
+    --accent-2-soft: #17332f;
+    --warn: #e0a83e;
+    --warn-soft: #3a2f16;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #131315;
+  --surface: #1b1b1e;
+  --surface-2: #232326;
+  --ink: #ece9e2;
+  --ink-soft: #b3b0a8;
+  --ink-faint: #7c7a75;
+  --line: #313134;
+  --line-strong: #414144;
+  --accent: #ff5c7f;
+  --accent-ink: #131315;
+  --accent-soft: #3a1d26;
+  --accent-2: #4fc9ba;
+  --accent-2-soft: #17332f;
+  --warn: #e0a83e;
+  --warn-soft: #3a2f16;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}

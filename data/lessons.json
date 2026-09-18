@@ -1,0 +1,595 @@
+[
+  {
+    "id": "orientation-01",
+    "level": "L0",
+    "title": "What InDesign Is Actually For",
+    "duration": "12 min",
+    "skills": ["Orientation"],
+    "whatYoullLearn": "What InDesign does, how it differs from Photoshop and Illustrator, and the basic shape of a document.",
+    "whyItMatters": "Most beginners try to design in the wrong tool. Knowing what InDesign is for saves you from fighting the software.",
+    "concept": "Photoshop edits pixels. Illustrator draws vector shapes and icons. InDesign arranges pages: it's a page-layout tool built for anything with more than one page of text and images working together \u2014 magazines, books, reports, brochures, forms. You bring images and graphics in from other tools; you don't paint or draw complex illustrations inside it.",
+    "interface": "When you open InDesign you see: the Pasteboard (grey work area), the Page (white, the actual document), the Toolbar (left), Panels (right, e.g. Pages, Properties, Paragraph Styles), and the Control Bar (top, changes based on what's selected).",
+    "steps": [
+      "Open InDesign and choose File > New > Document.",
+      "Look at the Toolbar on the left \u2014 don't memorize it yet, just notice it exists.",
+      "Open the Pages panel (Window > Pages) and notice each page is a separate rectangle.",
+      "Open the Properties panel and click on empty space, then click a page \u2014 watch the panel change.",
+      "Zoom in and out with Ctrl/Cmd + '+' and '-' to get a feel for navigation."
+    ],
+    "tryItYourself": "Without following instructions, try to find where you would change the page size of a document you already have open. Don't change anything yet \u2014 just locate it.",
+    "challenge": "Open InDesign, create a blank document with default settings, and identify five panels currently visible on screen. Write down what you think each one does, before looking it up.",
+    "commonMistakes": [
+      "Trying to draw freehand illustrations in InDesign instead of Illustrator.",
+      "Panicking when panels disappear \u2014 they're just collapsed or closed, not lost (Window menu brings any of them back).",
+      "Confusing the pasteboard (grey area) with the page (white area) \u2014 only what's on the page prints or exports."
+    ],
+    "proTip": "Professionals use the pasteboard as a staging area \u2014 parking images and text frames there before dragging them onto the page. It never appears in your final export.",
+    "knowledgeCheck": [
+      { "q": "Which tool would you use to design a 40-page annual report?", "options": ["Photoshop", "Illustrator", "InDesign", "None \u2014 use a word processor"], "answerIndex": 2, "explanation": "InDesign is built specifically for multi-page layout combining text and images." },
+      { "q": "What's the grey area around the page called?", "options": ["The canvas", "The pasteboard", "The bleed", "The artboard"], "answerIndex": 1, "explanation": "The pasteboard is a scratch area outside the page; nothing there gets exported." },
+      { "q": "True or false: everything on the pasteboard exports with your PDF.", "options": ["True", "False"], "answerIndex": 1, "explanation": "Only content on the page (and inside the bleed, if set) exports." }
+    ],
+    "checklist": ["I can identify the page vs. the pasteboard", "I opened and closed at least one panel", "I understand InDesign's role vs. Photoshop and Illustrator"]
+  },
+  {
+    "id": "orientation-02",
+    "level": "L0",
+    "title": "Your First Document",
+    "duration": "18 min",
+    "skills": ["Orientation", "Documents"],
+    "whatYoullLearn": "How to create a new document with the right page size, margins, and pages, then save and export it.",
+    "whyItMatters": "Every project starts here. Getting the setup dialog right avoids painful rebuilds later \u2014 changing page size after you've built 40 pages is a real headache.",
+    "concept": "A document's setup defines its Page Size (final trimmed dimensions), Margins (safe interior space for content), Columns (vertical divisions of the margin area), and Facing Pages (whether pages are printed as spreads, like a book, versus standalone, like a flyer).",
+    "interface": "File > New > Document opens the setup dialog. Page size presets live in the dropdown at the top; margins and columns are in the same dialog under 'Margins and Columns'.",
+    "steps": [
+      "Choose File > New > Document.",
+      "Set the page size to Letter or A4.",
+      "Set margins to 0.5 in (or 15 mm) on all sides.",
+      "Leave Facing Pages unchecked for now.",
+      "Set the number of pages to 1 and click Create.",
+      "Choose File > Save As, name your file, and save it as a .indd.",
+      "Choose File > Export, choose Adobe PDF (Print), and export a PDF to see the result."
+    ],
+    "tryItYourself": "Create a second, separate document that uses Facing Pages and 3 pages. Notice how the Pages panel displays it differently \u2014 pages now pair up into spreads.",
+    "challenge": "Create a 4-page facing-pages document at A5 size with 12 mm margins and 2 columns. Save it, then export page 1 alone as a PDF.",
+    "commonMistakes": [
+      "Leaving Facing Pages checked for something that will never be bound, like a single flyer.",
+      "Ignoring the Bleed and Slug section and having to add bleed manually later.",
+      "Forgetting to save before exporting, then losing changes if InDesign crashes."
+    ],
+    "proTip": "If you're not sure whether a project needs Facing Pages, ask: will this ever be printed as a booklet, bound, or read as spreads (left+right pages together)? If yes, turn it on from the start.",
+    "knowledgeCheck": [
+      { "q": "What does 'Facing Pages' control?", "options": ["Page color", "Whether pages are laid out as book-style spreads", "Font size", "Export quality"], "answerIndex": 1, "explanation": "Facing Pages arranges pages into left/right spreads, like a real book." },
+      { "q": "What file format do you save your working file as?", "options": [".pdf", ".indd", ".jpg", ".docx"], "answerIndex": 1, "explanation": ".indd is InDesign's native, editable format." },
+      { "q": "Margins define:", "options": ["The page's trim size", "The safe interior area for content", "The bleed area", "The file's color mode"], "answerIndex": 1, "explanation": "Margins mark where your main content should stay inside the page edges." }
+    ],
+    "checklist": ["I created a document with custom page size and margins", "I saved a .indd file", "I exported a PDF successfully"]
+  },
+  {
+    "id": "fundamentals-01",
+    "level": "L1",
+    "title": "Frames: The Building Block of Everything",
+    "duration": "20 min",
+    "skills": ["Objects", "Frames"],
+    "whatYoullLearn": "What frames are, the difference between text frames, image frames, and shapes, and how to select and move them.",
+    "whyItMatters": "Every single thing you place in InDesign lives inside a frame. Understanding frames is understanding the whole program.",
+    "concept": "A frame is a container. It can hold text, an image, or nothing (acting as a plain shape). The same rectangle tool can create any of these \u2014 what determines its behavior is what you put inside it, shown by an X (empty graphic frame) or a blinking cursor (text frame).",
+    "interface": "The Selection Tool (black arrow, V) moves and resizes whole frames. The Direct Selection Tool (white arrow, A) edits points and content inside a frame, like repositioning an image within its frame.",
+    "steps": [
+      "Press F to switch to the Rectangle Frame tool, or R for a plain Rectangle.",
+      "Draw a frame anywhere on the page.",
+      "Press V for the Selection tool and drag the frame to move it.",
+      "Drag a corner handle to resize it, holding Shift to keep proportions.",
+      "Press T for the Type tool, click inside an empty frame, and type \u2014 it becomes a text frame.",
+      "Press Escape, then V, and try switching between two frames using Tab."
+    ],
+    "tryItYourself": "Create three frames of different sizes. Use the Selection tool to align their left edges by eye, then check your work using Object > Align > Align Left Edges.",
+    "challenge": "Create a layout with one text frame (containing a heading), one image frame (empty, with an X), and one plain colored shape, arranged so they don't overlap.",
+    "commonMistakes": [
+      "Confusing the Selection Tool (whole frame) with the Direct Selection Tool (frame contents) and wondering why dragging does something unexpected.",
+      "Resizing a frame with an image inside and having the image not scale with it \u2014 the frame and its content resize independently unless you use Content-Aware Fit or hold the right modifier.",
+      "Losing track of which tool is active \u2014 check the Toolbar highlight or the Control Bar's left-most icon."
+    ],
+    "proTip": "Double-click inside any frame with the Selection tool to instantly switch to editing its content \u2014 this is faster than switching tools manually.",
+    "knowledgeCheck": [
+      { "q": "What indicates an empty graphic frame?", "options": ["A blinking cursor", "An X across it", "A red border", "Nothing, it's invisible"], "answerIndex": 1, "explanation": "An X shown inside an empty frame marks it as a graphic (image) frame." },
+      { "q": "Which tool edits a frame's contents rather than the frame itself?", "options": ["Selection Tool (V)", "Direct Selection Tool (A)", "Zoom Tool", "Hand Tool"], "answerIndex": 1, "explanation": "The Direct Selection Tool lets you reposition or reshape content inside a frame." },
+      { "q": "What shortcut activates the Type tool?", "options": ["T", "P", "F", "V"], "answerIndex": 0, "explanation": "T activates the Type tool for creating and editing text frames." }
+    ],
+    "checklist": ["I created a text frame, an image frame, and a shape", "I can explain the difference between Selection and Direct Selection tools", "I moved and resized a frame confidently"]
+  },
+  {
+    "id": "fundamentals-02",
+    "level": "L1",
+    "title": "Working With Text",
+    "duration": "22 min",
+    "skills": ["Text", "Character formatting", "Paragraph formatting"],
+    "whatYoullLearn": "How to create and format text: fonts, size, leading, tracking, alignment, indents, and lists.",
+    "whyItMatters": "Text is the core content of almost every InDesign document. Formatting it cleanly is the difference between amateur and professional output.",
+    "concept": "Character formatting affects selected letters (font, size, tracking, kerning). Paragraph formatting affects the whole paragraph (alignment, indents, spacing before/after, bullets and numbering). Both live in the Character and Paragraph panels, or combined in the Properties panel.",
+    "interface": "Window > Type & Tables > Character, and Window > Type & Tables > Paragraph. Most common controls are also in the Control Bar when the Type tool is active.",
+    "steps": [
+      "Create a text frame and type a paragraph of placeholder text.",
+      "Select all the text (Ctrl/Cmd+A) and change the font and size in the Control Bar.",
+      "Open the Character panel and adjust Leading (space between lines) and Tracking (uniform letter spacing).",
+      "Open the Paragraph panel and try each alignment option: left, center, right, justify.",
+      "Set a first-line indent and a space-after value.",
+      "Select a few lines and apply a bulleted list from the Paragraph panel."
+    ],
+    "tryItYourself": "Take one paragraph and make it feel 'tighter' and more professional using only leading and tracking \u2014 no font size changes.",
+    "challenge": "Format a short article excerpt: a bold headline at 24pt, a byline in italics at 10pt, and body copy at 10pt/14pt leading, justified, with a first-line indent on every paragraph after the first.",
+    "commonMistakes": [
+      "Adding manual line breaks instead of letting text reflow \u2014 this breaks when you edit copy later.",
+      "Using spaces or tabs to fake a first-line indent instead of the actual Paragraph panel setting.",
+      "Justifying narrow text frames, which creates ugly, uneven word spacing \u2014 narrow columns usually read better left-aligned."
+    ],
+    "proTip": "Leading is usually set to about 120% of your font size as a starting point (e.g. 10pt text, 12pt leading), then adjusted by eye.",
+    "knowledgeCheck": [
+      { "q": "Leading controls:", "options": ["Space between letters", "Space between lines", "Space between paragraphs", "Font weight"], "answerIndex": 1, "explanation": "Leading is vertical space from one line's baseline to the next." },
+      { "q": "Tracking controls:", "options": ["Uniform letter spacing across a range of text", "Space between two specific letters only", "Line height", "Paragraph indent"], "answerIndex": 0, "explanation": "Tracking applies even spacing across selected text; kerning is between a single letter pair." },
+      { "q": "Why avoid justifying very narrow columns?", "options": ["It's not possible in InDesign", "It creates uneven, ugly word spacing", "It changes the font automatically", "It disables tracking"], "answerIndex": 1, "explanation": "Narrow justified columns often produce large, irregular gaps between words." }
+    ],
+    "checklist": ["I formatted character-level properties (font, size, tracking)", "I formatted paragraph-level properties (alignment, indent)", "I applied a bulleted list"]
+  },
+  {
+    "id": "fundamentals-03",
+    "level": "L1",
+    "title": "Placing and Fitting Images",
+    "duration": "18 min",
+    "skills": ["Images", "Frames"],
+    "whatYoullLearn": "How to place images into frames, control how they fit, and manage links.",
+    "whyItMatters": "Images are almost never the right size when placed. Knowing fitting options instantly separates confident users from people fighting stretched, cropped-wrong photos.",
+    "concept": "InDesign links to images rather than embedding them by default \u2014 your document stores a pointer to the file, not the full image data. This keeps file size small but means you must keep image files available and up to date, tracked in the Links panel.",
+    "interface": "File > Place (Ctrl/Cmd+D) to bring in an image. Object > Fitting has all fit options. Window > Links opens the Links panel.",
+    "steps": [
+      "Draw an empty image frame with the Rectangle Frame tool.",
+      "With the frame selected, choose File > Place and pick an image.",
+      "Notice the image likely doesn't fill the frame correctly at first.",
+      "Choose Object > Fitting > Fill Frame Proportionally.",
+      "Switch to the Direct Selection tool and drag inside the frame to reposition the image within it.",
+      "Open Window > Links and check the image's status and resolution."
+    ],
+    "tryItYourself": "Place the same image into three different-shaped frames (a square, a tall rectangle, a wide rectangle) and apply 'Fill Frame Proportionally' to each. Notice how the crop changes.",
+    "challenge": "Place three images into a simple 3-column layout, fit each proportionally, and center the interesting part of each photo within its frame using the Direct Selection tool.",
+    "commonMistakes": [
+      "Using 'Fit Content to Frame' on a photo, which stretches and distorts it instead of cropping.",
+      "Moving the original image file on your computer after placing it, breaking the link.",
+      "Not checking image resolution and printing a blurry, low-PPI photo."
+    ],
+    "proTip": "Effective PPI (pixels per inch, shown in the Links panel) matters more than the file's raw resolution \u2014 scaling an image up inside its frame lowers its effective PPI even if the original file was high-res.",
+    "knowledgeCheck": [
+      { "q": "By default, InDesign images are:", "options": ["Embedded permanently", "Linked to the original file", "Converted to vectors", "Compressed automatically"], "answerIndex": 1, "explanation": "InDesign links to external image files, tracked in the Links panel." },
+      { "q": "Which fitting option avoids distorting a photo?", "options": ["Fit Content to Frame", "Fill Frame Proportionally", "Fit Frame to Content and stretch manually", "None, distortion is unavoidable"], "answerIndex": 1, "explanation": "Fill Frame Proportionally crops rather than stretches, preserving proportions." },
+      { "q": "What does the Links panel help you check?", "options": ["Font kerning", "Image status and resolution", "Paragraph styles", "Page numbers"], "answerIndex": 1, "explanation": "The Links panel shows whether linked files are missing, modified, and their resolution." }
+    ],
+    "checklist": ["I placed an image into a frame", "I applied a fitting option correctly", "I checked an image's status in the Links panel"]
+  },
+  {
+    "id": "typography-01",
+    "level": "L2",
+    "title": "Leading, Tracking, and Kerning",
+    "duration": "20 min",
+    "skills": ["Typography"],
+    "whatYoullLearn": "The three most confused typography terms in InDesign, and how each one changes the feel of text.",
+    "whyItMatters": "These three controls do almost all the heavy lifting in making text feel professional versus amateurish.",
+    "concept": "Leading is vertical space between lines. Tracking is uniform horizontal space applied across a range of characters. Kerning is space adjusted between one specific pair of letters (like 'AV', which often looks too loose by default).",
+    "interface": "All three live in the Character panel (Window > Type & Tables > Character), and the two side-by-side icons in the Control Bar when text is selected.",
+    "steps": [
+      "Type a headline in a large size, like 48pt.",
+      "Click between two letters that look loosely spaced (often near capital letters like 'AV' or 'To').",
+      "Adjust Kerning using Alt/Option + Left/Right arrow to tighten that specific pair.",
+      "Select a full line and adjust Tracking to see the whole line tighten or loosen evenly.",
+      "Select a paragraph and adjust Leading to see line spacing change."
+    ],
+    "tryItYourself": "Set the same word at 60pt with default kerning, then again with manual kerning fixes on the worst-looking letter pairs. Compare them side by side.",
+    "challenge": "Take a headline, subhead, and body paragraph, and set leading appropriately for each (tighter for the headline, closer to 120% of size for body).", 
+    "commonMistakes": [
+      "Adjusting tracking to fix a single bad letter pair, which throws off the rest of the line evenly.",
+      "Using extremely tight leading on body text, making it hard to read.",
+      "Never touching kerning on large headline type, where letter-spacing issues are most visible."
+    ],
+    "proTip": "At large display sizes, always check kerning by eye \u2014 automatic kerning is tuned for body text and often looks loose or uneven on big headlines.",
+    "knowledgeCheck": [
+      { "q": "Which control adjusts just one letter pair?", "options": ["Leading", "Tracking", "Kerning", "Baseline shift"], "answerIndex": 2, "explanation": "Kerning targets the space between two specific adjacent characters." },
+      { "q": "A common rule of thumb for body text leading is:", "options": ["50% of font size", "About 120% of font size", "Exactly the font size", "Double the font size"], "answerIndex": 1, "explanation": "A common starting point is roughly 120% of the font size, then adjusted by eye." },
+      { "q": "Tracking applied across a whole line affects:", "options": ["Only the first and last letters", "Every character evenly", "Only vowels", "Only line height"], "answerIndex": 1, "explanation": "Tracking is a uniform adjustment across the whole selected range." }
+    ],
+    "checklist": ["I manually kerned a headline", "I adjusted tracking on a full line", "I set appropriate leading for body text"]
+  },
+  {
+    "id": "typography-02",
+    "level": "L2",
+    "title": "Building Hierarchy",
+    "duration": "18 min",
+    "skills": ["Typography", "Hierarchy"],
+    "whatYoullLearn": "How to guide a reader's eye using size, weight, and spacing rather than just 'making things bigger'.",
+    "whyItMatters": "A page with no hierarchy is exhausting to read \u2014 the eye doesn't know where to start. Hierarchy is the single most valuable typography skill.",
+    "concept": "Hierarchy is the visual ranking of information by importance: headline, subhead, body, caption. It's built with contrast \u2014 in size, weight, color, or spacing \u2014 not just by making the important thing huge.",
+    "interface": "No single panel \u2014 hierarchy is a combination of Character and Paragraph panel choices applied consistently, usually saved later as Paragraph Styles (Level 5).",
+    "steps": [
+      "Write four lines: a headline, a subhead, a byline, and a paragraph of body text.",
+      "Set the headline noticeably larger and bolder than everything else.",
+      "Set the subhead a clear step down in size, perhaps a different weight or italic.",
+      "Set the body text at a comfortable reading size (9\u201311pt for print).",
+      "Add space before the headline and after the subhead to group related elements."
+    ],
+    "tryItYourself": "Take a headline and body paragraph both set at the same size and weight, and fix the lack of hierarchy using only two changes.",
+    "challenge": "Design a simple flyer heading block: event title, date/location line, and a one-sentence description \u2014 with three clearly distinguishable levels of importance.",
+    "commonMistakes": [
+      "Using too many levels of hierarchy (5+ different sizes) which reads as chaotic instead of organized.",
+      "Relying only on bold everywhere, which flattens hierarchy \u2014 if everything is emphasized, nothing is.",
+      "Ignoring spacing as a hierarchy tool \u2014 grouping related text tightly and separating unrelated text is as powerful as size."
+    ],
+    "proTip": "A simple, reliable hierarchy system: 3 sizes, 2 weights. Most professional layouts don't need more than that.",
+    "knowledgeCheck": [
+      { "q": "Hierarchy is primarily built through:", "options": ["Random color choices", "Contrast in size, weight, and spacing", "Always using bold text", "Using as many fonts as possible"], "answerIndex": 1, "explanation": "Deliberate contrast tells the reader what to look at first." },
+      { "q": "A common, reliable hierarchy system uses:", "options": ["10+ font sizes", "3 sizes and 2 weights", "Only one size, many colors", "Random spacing"], "answerIndex": 1, "explanation": "A small, disciplined set of sizes and weights is easier to read and looks more intentional." },
+      { "q": "What happens if everything on a page is bold?", "options": ["Hierarchy improves", "Nothing changes visually", "Hierarchy flattens \u2014 nothing stands out", "Text becomes unreadable by InDesign"], "answerIndex": 2, "explanation": "Overusing emphasis removes the contrast that creates hierarchy." }
+    ],
+    "checklist": ["I built a 3-level hierarchy on a sample layout", "I used spacing, not just size, to group content", "I limited my type choices to a disciplined system"]
+  },
+  {
+    "id": "layout-01",
+    "level": "L3",
+    "title": "Grids and Why Layouts Work",
+    "duration": "20 min",
+    "skills": ["Layout", "Grids"],
+    "whatYoullLearn": "How column grids organize a page, and how to evaluate whether a layout is working.",
+    "whyItMatters": "A grid is what makes a page with many elements feel calm and organized rather than random.",
+    "concept": "A grid divides the page into columns (and sometimes rows) that content aligns to. It doesn't mean everything looks identical \u2014 it means every element's position is a deliberate choice relative to a shared structure, which is what makes layouts feel coherent even when they vary.",
+    "interface": "Layout > Margins and Columns sets up a basic column grid. Layout > Create Guides adds more granular guides. View > Grids & Guides > Show/Hide Guides toggles visibility.",
+    "steps": [
+      "Open a document and go to Layout > Margins and Columns.",
+      "Set 3 columns with a 0.2 in (5 mm) gutter.",
+      "Draw text and image frames and snap their edges to the column guides.",
+      "Try placing one image so it spans two columns deliberately.",
+      "Step back and check: does everything align to at least one guide?"
+    ],
+    "tryItYourself": "Take an existing layout you've made and audit it: circle anything that doesn't align to your grid. Fix at least two misalignments.",
+    "challenge": "Design a one-page layout using a 4-column grid: a headline spanning all 4 columns, an image spanning 2, and body text in the remaining 2.",
+    "commonMistakes": [
+      "Setting up a grid, then ignoring it and eyeballing placement anyway.",
+      "Using too many columns for a simple layout, adding needless complexity.",
+      "Confusing 'grid' with 'boring' \u2014 grids constrain position, not creativity."
+    ],
+    "proTip": "When a layout 'feels off' but you can't say why, check alignment first \u2014 90% of amateur-looking layouts are actually just misaligned, not badly designed.",
+    "knowledgeCheck": [
+      { "q": "A grid primarily controls:", "options": ["Font choice", "Where elements align on the page", "Color palette", "File size"], "answerIndex": 1, "explanation": "Grids provide a shared structure for positioning content." },
+      { "q": "Using a grid means every element must be the same size.", "options": ["True", "False"], "answerIndex": 1, "explanation": "A grid constrains alignment, not uniformity \u2014 elements can span different numbers of columns." },
+      { "q": "A common cause of amateur-looking layouts is:", "options": ["Too much whitespace", "Misalignment", "Using a grid", "Too few fonts"], "answerIndex": 1, "explanation": "Inconsistent alignment is one of the most common, fixable design issues." }
+    ],
+    "checklist": ["I set up a column grid", "I aligned every element to the grid", "I audited an existing layout for misalignment"]
+  },
+  {
+    "id": "parentpages-01",
+    "level": "L4",
+    "title": "Parent Pages: Build Once, Apply Everywhere",
+    "duration": "22 min",
+    "skills": ["Parent Pages", "Page numbers"],
+    "whatYoullLearn": "How to create a page template that automatically applies headers, footers, and page numbers across a whole document.",
+    "whyItMatters": "Without parent pages, you'd manually recreate headers, footers, and page numbers on every single page \u2014 unmanageable beyond a few pages.",
+    "concept": "A Parent Page (formerly 'Master Page') is a template. Anything placed on it \u2014 a footer, a running header, an automatic page number \u2014 appears on every document page that has that parent applied, and updates everywhere at once if you change the parent.",
+    "interface": "Window > Pages opens the Pages panel, which shows parent pages at the top and document pages below. Double-click a parent's icon to edit it.",
+    "steps": [
+      "Open the Pages panel and double-click the 'A-Parent' icon to edit it.",
+      "Draw a text frame in the footer area.",
+      "With the Type tool active inside that frame, go to Type > Insert Special Character > Markers > Current Page Number.",
+      "Notice it shows 'A' on the parent \u2014 it will show real numbers on document pages.",
+      "Return to a document page (double-click its icon) and confirm the page number and footer appear automatically.",
+      "Repeat for a header if needed, then apply the parent to additional pages by dragging its icon onto them."
+    ],
+    "tryItYourself": "Create a second parent page ('B-Parent') with a different footer style, and apply it to just one page in your document to see local overrides in action.",
+    "challenge": "Build an 8-page document with a parent page containing a footer with an automatic page number and a running header with the document title, applied to every page.",
+    "commonMistakes": [
+      "Manually typing page numbers on every page instead of using the automatic marker.",
+      "Editing a document page directly when you meant to edit the parent, so changes don't propagate.",
+      "Forgetting that direct edits on a document page 'override' the parent and won't update if the parent changes later (Ctrl/Cmd+Shift+click to intentionally override)."
+    ],
+    "proTip": "Section markers (Layout > Numbering & Section Options) let you restart page numbers or add prefixes \u2014 useful for a booklet with roman-numeral front matter and arabic-numeral chapters.",
+    "knowledgeCheck": [
+      { "q": "What updates automatically on every page using a parent?", "options": ["Only text color", "Anything placed on the parent page, like footers and page numbers", "Only images", "Nothing, parents are static"], "answerIndex": 1, "explanation": "Parent page content propagates to every page it's applied to." },
+      { "q": "How do you insert an automatic page number?", "options": ["Type the number manually", "Type > Insert Special Character > Markers > Current Page Number", "Object > Effects", "File > Numbering"], "answerIndex": 1, "explanation": "The Current Page Number marker updates automatically per page." },
+      { "q": "What happens if you edit a document page's footer directly instead of the parent?", "options": ["The parent updates too", "It creates a local override that won't follow future parent changes", "InDesign blocks the edit", "Nothing happens"], "answerIndex": 1, "explanation": "Direct edits override the parent's content on that specific page only." }
+    ],
+    "checklist": ["I created a parent page with a footer and automatic page number", "I applied a parent page to multiple document pages", "I understand what an override is"]
+  },
+  {
+    "id": "styles-01",
+    "level": "L5",
+    "title": "Paragraph and Character Styles",
+    "duration": "24 min",
+    "skills": ["Styles"],
+    "whatYoullLearn": "How to define reusable text formatting once and apply it everywhere, then update it globally.",
+    "whyItMatters": "Imagine a 60-page report. Manually formatting every heading means that changing the design later means redoing 60 pages by hand. Styles let you define a heading once and update every heading instantly.",
+    "concept": "A Paragraph Style stores formatting for an entire paragraph (font, size, spacing, alignment). A Character Style stores formatting for a run of characters within a paragraph (like bolding a single word). Both are 'based on' a hierarchy, so changing a parent style can cascade to children.",
+    "interface": "Window > Styles > Paragraph Styles and Window > Styles > Character Styles.",
+    "steps": [
+      "Format one paragraph exactly how you want a 'Body Text' style to look.",
+      "With your cursor inside it, open the Paragraph Styles panel and click 'New Style'.",
+      "Name it 'Body Text' and click OK.",
+      "Format a heading, then repeat to create a 'Heading 1' style.",
+      "Select other body paragraphs and click your 'Body Text' style to apply it instantly.",
+      "Go back to the 'Body Text' style, double-click it, and change the font size \u2014 watch every paragraph using it update at once."
+    ],
+    "tryItYourself": "Create a 'Heading 2' style that's Based On 'Heading 1' but smaller, and test what happens when you change Heading 1's color.",
+    "challenge": "Format 20 paragraphs of mixed headings and body text using only 3 paragraph styles, applying them consistently and updating one style to confirm it cascades everywhere.",
+    "commonMistakes": [
+      "Manually reformatting text instead of updating the style, creating inconsistency.",
+      "Never using 'Based On' relationships, missing out on cascading updates.",
+      "Applying local overrides on top of a style repeatedly until the style becomes meaningless."
+    ],
+    "proTip": "Professional templates rarely have more than 8\u201312 paragraph styles total \u2014 if you're creating a new style for every paragraph, you're likely duplicating an existing one.",
+    "knowledgeCheck": [
+      { "q": "A Paragraph Style formats:", "options": ["A single character", "An entire paragraph", "A whole document", "Only images"], "answerIndex": 1, "explanation": "Paragraph styles apply to the full paragraph the cursor is in." },
+      { "q": "The main benefit of styles is:", "options": ["They look nicer than manual formatting", "They let you update formatting globally from one place", "They're required to export a PDF", "They reduce file size"], "answerIndex": 1, "explanation": "Styles centralize formatting so changes propagate everywhere the style is applied." },
+      { "q": "What does 'Based On' do between two styles?", "options": ["Nothing, it's cosmetic", "Creates a parent-child relationship so child styles inherit and can cascade updates", "Deletes the parent style", "Merges both styles into one"], "answerIndex": 1, "explanation": "Based On styles inherit shared properties and can cascade certain changes." }
+    ],
+    "checklist": ["I created at least two paragraph styles", "I applied styles instead of manual formatting", "I updated a style and watched it cascade"]
+  },
+  {
+    "id": "longdocs-01",
+    "level": "L6",
+    "title": "Threading Text and Handling Overset",
+    "duration": "18 min",
+    "skills": ["Long Documents", "Text threading"],
+    "whatYoullLearn": "How to flow text across multiple frames and pages, and fix the dreaded red '+' overset icon.",
+    "whyItMatters": "Long documents rarely fit their text into one frame. Threading is how articles, chapters, and books flow across pages.",
+    "concept": "Overset text is content that doesn't fit in its frame \u2014 InDesign hides it rather than deleting it, marked by a small red '+' in the frame's bottom-right corner. Threading connects one frame's overflow into the next frame, so text flows continuously across a layout.",
+    "interface": "The In and Out ports are the small squares at a text frame's top-left and bottom-right corners, used to thread frames together.",
+    "steps": [
+      "Create a text frame and paste in a long amount of placeholder text so it overflows.",
+      "Notice the red '+' icon in the bottom-right corner \u2014 this is overset text.",
+      "Click that red '+' with the Selection tool \u2014 your cursor becomes a loaded text icon.",
+      "Draw a second frame elsewhere (or on another page) \u2014 the overset text flows into it automatically.",
+      "Repeat as needed until no red '+' remains.",
+      "Confirm using Window > Type & Tables > Story or by checking each frame."
+    ],
+    "tryItYourself": "Deliberately create overset text, then thread it across 3 frames on 3 separate pages.",
+    "challenge": "Take a multi-paragraph article and thread it across a 2-page spread, split into two columns per page (4 threaded frames total), with zero overset remaining.",
+    "commonMistakes": [
+      "Shrinking the font size to force text to fit instead of properly threading or editing copy.",
+      "Not noticing overset text because the red '+' is small \u2014 always check before exporting.",
+      "Threading frames in the wrong order, causing text to appear out of sequence."
+    ],
+    "proTip": "Enable View > Extras > Show Text Threads (with frames selected) to see blue lines connecting your threaded frames \u2014 invaluable for auditing long documents.",
+    "knowledgeCheck": [
+      { "q": "What does the red '+' icon mean?", "options": ["The frame has a link error", "There's overset (hidden overflow) text", "The frame is locked", "The style is out of date"], "answerIndex": 1, "explanation": "The red plus marks text that doesn't fit and isn't currently visible." },
+      { "q": "How do you thread a frame's overflow into a new frame?", "options": ["Copy-paste the extra text manually", "Click the red '+' out-port, then click/draw the next frame", "Delete the overset text", "Increase the font size"], "answerIndex": 1, "explanation": "Clicking the out-port loads a text cursor you use to create or click the next connected frame." },
+      { "q": "Why shouldn't you just shrink font size to hide overset text?", "options": ["It's not possible in InDesign", "It's a real fix", "It masks a structural problem and hurts readability/consistency", "It changes the page color"], "answerIndex": 2, "explanation": "Shrinking type to fit is a workaround, not a real fix, and undermines your type system." }
+    ],
+    "checklist": ["I identified overset text", "I threaded frames together successfully", "I have zero overset text in a test document"]
+  },
+  {
+    "id": "tables-01",
+    "level": "L7",
+    "title": "Building and Styling Tables",
+    "duration": "20 min",
+    "skills": ["Tables"],
+    "whatYoullLearn": "How to create a table, format its cells, and apply table and cell styles for consistency.",
+    "whyItMatters": "Price lists, schedules, and comparison charts all need clean, readable tables \u2014 a skill many InDesign users never properly learn.",
+    "concept": "A table lives inside a text frame. You define rows and columns, then style individual cells or ranges. Table Styles and Cell Styles work like paragraph/character styles, letting you apply consistent formatting (like alternating row colors) in one click.",
+    "interface": "Table > Insert Table creates a new table inside an active text frame. Window > Styles > Table Styles and Cell Styles manage reusable formatting.",
+    "steps": [
+      "Draw a text frame, place your cursor inside it, and go to Table > Insert Table.",
+      "Set 4 columns and 5 rows, and click OK.",
+      "Click into cells and type content; press Tab to move to the next cell.",
+      "Select the header row and apply bold text and a fill color via the Properties or Swatches panel.",
+      "Select the body rows and apply Table > Table Options > Alternating Fills for a striped look.",
+      "Save this formatting as a Table Style for reuse."
+    ],
+    "tryItYourself": "Build a 3-column, 6-row schedule table and manually merge two cells in the header row to create a spanning title.",
+    "challenge": "Import a small set of tabular data (or type it manually) into a styled price table with a distinct header row, alternating row colors, and consistent cell padding.",
+    "commonMistakes": [
+      "Manually resizing every cell instead of selecting a column/row and setting a precise width or height.",
+      "Forgetting to style the header row differently, making it hard to scan the table.",
+      "Not using Table Styles, so every new table has to be reformatted from scratch."
+    ],
+    "proTip": "You can paste tab-delimited or copied spreadsheet data directly into InDesign and choose 'Insert Table' formatting in the paste options to convert it automatically.",
+    "knowledgeCheck": [
+      { "q": "A table in InDesign lives inside:", "options": ["A standalone table frame type", "A text frame", "An image frame", "The pasteboard only"], "answerIndex": 1, "explanation": "Tables are inserted into text frames." },
+      { "q": "What do Table Styles help with?", "options": ["Automatic spell check", "Reusable, consistent table formatting", "Image compression", "Page numbering"], "answerIndex": 1, "explanation": "Table Styles save formatting so it can be reapplied to new tables consistently." },
+      { "q": "Alternating Fills are used to:", "options": ["Change font weight", "Create striped rows for readability", "Merge cells", "Resize columns"], "answerIndex": 1, "explanation": "Alternating row colors help readers track across wide tables." }
+    ],
+    "checklist": ["I created a table with headers and data", "I styled a header row distinctly", "I applied alternating row fills"]
+  },
+  {
+    "id": "images-01",
+    "level": "L8",
+    "title": "Text Wrap and Anchored Objects",
+    "duration": "16 min",
+    "skills": ["Images", "Text wrap"],
+    "whatYoullLearn": "How to make text flow naturally around an image, and how to anchor an image so it travels with its paragraph.",
+    "whyItMatters": "Editorial layouts \u2014 magazines, articles \u2014 almost always wrap text around images rather than leaving awkward rectangular gaps.",
+    "concept": "Text Wrap pushes surrounding text away from an object's edges (or a custom-drawn shape). Anchored Objects attach an image to a specific point in a text flow, so if the text reflows (edited, added to, or moved), the image moves with it instead of staying pinned to a fixed page position.",
+    "interface": "Window > Text Wrap opens the wrap panel. Right-click an object > Anchored Object > Insert to anchor it into text.",
+    "steps": [
+      "Place an image frame in the middle of a column of body text, overlapping it.",
+      "Select the image and open Window > Text Wrap.",
+      "Click 'Wrap around bounding box' and add a small offset.",
+      "Watch the surrounding text reflow around the image automatically.",
+      "Try 'Wrap around object shape' on a non-rectangular image for a tighter wrap.",
+      "Select the image, cut it, click inside the text where it should live, and choose Edit > Paste to anchor it inline (or use Object > Anchored Object > Insert)."
+    ],
+    "tryItYourself": "Add or delete a sentence of body text before an anchored image and watch it move with its anchor point, versus a non-anchored image that stays fixed.",
+    "challenge": "Lay out a short article with two images: one wrapped tightly using object-shape wrap, and one small anchored image inline within a paragraph.",
+    "commonMistakes": [
+      "Using text wrap on an object that's behind other text unintentionally, pushing text away from things the reader can't even see.",
+      "Not anchoring images in long documents, so edits to copy leave photos oddly placed relative to the text they illustrate.",
+      "Wrapping tightly around a busy, detailed photo shape, creating a jagged, hard-to-read text edge."
+    ],
+    "proTip": "For photos with irregular subjects (like a product on a white background), use 'Detect Edges' in the Text Wrap panel for an automatic, tight contour wrap.",
+    "knowledgeCheck": [
+      { "q": "Text Wrap is used to:", "options": ["Change font kerning", "Push text away from an object's edges", "Resize an image", "Create a new page"], "answerIndex": 1, "explanation": "Text wrap forces surrounding text to flow around an object." },
+      { "q": "An anchored object:", "options": ["Is locked in place forever", "Moves with its attachment point in the text flow", "Can't have text wrap applied", "Is always invisible"], "answerIndex": 1, "explanation": "Anchored objects travel with the text they're attached to as it reflows." },
+      { "q": "'Detect Edges' in Text Wrap is useful for:", "options": ["Rectangular frames only", "Irregularly shaped subjects like a product photo", "Table formatting", "Page numbering"], "answerIndex": 1, "explanation": "Detect Edges creates a contour wrap that follows an image's actual subject shape." }
+    ],
+    "checklist": ["I applied text wrap around an image", "I anchored an image inside a text flow", "I tested how anchored vs. unanchored images behave when text changes"]
+  },
+  {
+    "id": "color-01",
+    "level": "L9",
+    "title": "RGB vs. CMYK: Choosing the Right Color Space",
+    "duration": "16 min",
+    "skills": ["Color"],
+    "whatYoullLearn": "The difference between screen color and print color, and how to set up swatches correctly for your output.",
+    "whyItMatters": "Using the wrong color mode is one of the most common beginner mistakes \u2014 it causes dull prints or unusable screen exports.",
+    "concept": "RGB (Red, Green, Blue) is how screens emit light \u2014 use it for anything staying digital (PDFs read on screen, web). CMYK (Cyan, Magenta, Yellow, Black) is how printers lay down ink \u2014 use it for anything going to a printing press. Colors that look vivid in RGB often look duller once converted to CMYK, because CMYK has a smaller range of reproducible colors.",
+    "interface": "Window > Color > Swatches manages your color palette. New Color Swatch lets you choose the color mode (Process = CMYK/RGB, or Spot for special inks).",
+    "steps": [
+      "Open File > Document Setup and check the Intent (Print vs. Web).",
+      "Open the Swatches panel and click 'New Color Swatch'.",
+      "Choose Process color and set the Color Mode to CMYK for a print project.",
+      "Create 2\u20133 swatches for your project's palette and name them clearly (not 'C=50 M=0...').",
+      "Apply a swatch to a shape's fill and another to text.",
+      "Check Window > Output > Separations Preview to see how a CMYK color splits into its four printing plates."
+    ],
+    "tryItYourself": "Create the same visual color first in RGB, then in CMYK, and compare how differently they may render once your document's intent is set to Print.",
+    "challenge": "Build a small 3-color swatch palette for a brand (primary, secondary, neutral), name each swatch meaningfully, and apply all three across a sample layout.",
+    "commonMistakes": [
+      "Designing a print brochure in RGB, discovering colors are wrong (or unprintable) only after professional printing.",
+      "Leaving swatches named by their numeric values instead of meaningful names, making them hard to reuse.",
+      "Using pure black (C0 M0 Y0 K100) for large fill areas in print, which prints as a flat, weak black instead of a rich, deep one."
+    ],
+    "proTip": "For large black print areas, professionals use a 'rich black' mix (like C60 M40 Y40 K100) rather than K100 alone, for deeper, more even coverage.",
+    "knowledgeCheck": [
+      { "q": "Which color mode should a print brochure use?", "options": ["RGB", "CMYK", "HSB", "Web-safe hex"], "answerIndex": 1, "explanation": "CMYK matches how printing presses actually apply ink." },
+      { "q": "Why might a color look duller after converting RGB to CMYK?", "options": ["CMYK has a smaller reproducible color range than RGB", "It's a software bug", "CMYK always removes 50% brightness", "It only happens with photos"], "answerIndex": 0, "explanation": "CMYK's gamut is narrower than RGB, especially for vivid greens and blues." },
+      { "q": "What's a 'rich black' used for?", "options": ["Text at small sizes", "Large print black areas needing deeper, more even coverage", "Web design only", "Spot colors"], "answerIndex": 1, "explanation": "Rich black mixes CMY with K for denser coverage on large printed areas." }
+    ],
+    "checklist": ["I set up CMYK swatches for a print project", "I named swatches meaningfully", "I checked Separations Preview at least once"]
+  },
+  {
+    "id": "print-01",
+    "level": "L10",
+    "title": "Bleed, Preflight, and Getting Print-Ready",
+    "duration": "22 min",
+    "skills": ["Print Production", "Preflight"],
+    "whatYoullLearn": "How to set up bleed correctly and use the Preflight panel to catch errors before sending a file to print.",
+    "whyItMatters": "A file with missing bleed, missing fonts, or low-res images can get rejected by a printer \u2014 or worse, print incorrectly and waste money.",
+    "concept": "Bleed is extra artwork extending past the trim edge (usually 3mm / 0.125in) so that when the printer trims the page, there's no thin white sliver from slight misalignment. Preflight is InDesign's built-in error-checker, showing a red dot with live warnings for issues like missing links, overset text, or low-resolution images.",
+    "interface": "Bleed is set in File > Document Setup or the New Document dialog. The Preflight panel is Window > Output > Preflight, and shows a status indicator at the bottom-left of the document window.",
+    "steps": [
+      "Open File > Document Setup and set Bleed to 0.125 in (3mm) on all sides.",
+      "Extend any background images or color fills that touch the page edge out to the bleed line.",
+      "Open Window > Output > Preflight and check the panel \u2014 a green dot means no errors.",
+      "If there are errors, click each one to see details and jump directly to the problem.",
+      "Fix any missing links, overset text, or low-res image warnings.",
+      "Export using File > Export > Adobe PDF (Print), with 'Marks and Bleeds' enabled and bleed set to match your document."
+    ],
+    "tryItYourself": "Deliberately break your file (delete a linked image, or drastically shrink an image), then use Preflight to identify and fix each issue you created.",
+    "challenge": "Prepare a print-ready brochure file: correct bleed, zero overset text, all images above 300 effective PPI, all links up to date, and a clean Preflight panel.",
+    "commonMistakes": [
+      "Forgetting to extend background elements into the bleed area, leaving white slivers after trimming.",
+      "Ignoring Preflight warnings and exporting anyway.",
+      "Exporting a screen-optimized PDF for a project that's actually going to a commercial printer."
+    ],
+    "proTip": "Create a custom Preflight Profile (Preflight panel dropdown > Define Profiles) matching your printer's specific requirements, like minimum 300 PPI, so InDesign warns you in real time as you work, not just at the end.",
+    "knowledgeCheck": [
+      { "q": "Bleed exists to prevent:", "options": ["Blurry text", "Thin white edges after trimming due to slight misalignment", "Font substitution", "Color shifts"], "answerIndex": 1, "explanation": "Bleed gives trimming a small margin of error so no white edge shows." },
+      { "q": "A green dot in the Preflight panel means:", "options": ["The file is ready to print with zero errors detected", "The document is locked", "The file needs bleed", "Fonts are missing"], "answerIndex": 0, "explanation": "Green means no errors matched the active preflight profile." },
+      { "q": "What's a common print-readiness mistake?", "options": ["Setting bleed to 0.125in", "Ignoring Preflight warnings before export", "Using CMYK for print", "Naming swatches clearly"], "answerIndex": 1, "explanation": "Exporting despite visible warnings often causes print problems." }
+    ],
+    "checklist": ["I set up proper bleed", "I resolved every Preflight warning", "I exported a correctly configured print PDF"]
+  },
+  {
+    "id": "interactive-01",
+    "level": "L11",
+    "title": "Buttons and Interactive PDF Navigation",
+    "duration": "18 min",
+    "skills": ["Interactive PDFs"],
+    "whatYoullLearn": "How to add clickable buttons and hyperlinks so a PDF can be navigated on screen, not just printed.",
+    "whyItMatters": "Portfolios, digital brochures, and interactive forms rely on navigation that a plain, static PDF doesn't have.",
+    "concept": "An interactive PDF adds behavior on top of layout: buttons that jump to pages or open URLs, and bookmarks for a clickable table of contents. This only works when exported specifically as an Interactive PDF, not a Print PDF.",
+    "interface": "Window > Interactive > Buttons and Forms creates and configures buttons. File > Export > Adobe PDF (Interactive) is the correct export path.",
+    "steps": [
+      "Draw a small rectangle to act as a 'Next Page' button.",
+      "Select it and open Window > Interactive > Buttons and Forms.",
+      "Click 'Convert Object to Button'.",
+      "Under Actions, click '+' and choose 'Go To Next Page'.",
+      "Repeat for a 'Previous Page' button using 'Go To Previous Page'.",
+      "Add a text frame link: select text, go to Window > Interactive > Hyperlinks, and create a URL hyperlink.",
+      "Export via File > Export > Adobe PDF (Interactive) and test the buttons in a PDF reader."
+    ],
+    "tryItYourself": "Add a bookmark for each major section of a multi-page document using Window > Interactive > Bookmarks, and test that they appear in the exported PDF's sidebar.",
+    "challenge": "Build a 5-page interactive portfolio PDF with next/previous navigation buttons on every page and at least one external hyperlink to a contact page or website.",
+    "commonMistakes": [
+      "Exporting as a Print PDF instead of Interactive PDF, so buttons don't work at all.",
+      "Forgetting to test buttons in an actual PDF reader (not just inside InDesign, where they don't function the same way).",
+      "Overlapping button hit-areas, making it unclear which button gets clicked."
+    ],
+    "proTip": "Use consistent button placement across all pages (ideally on a parent page) so navigation feels predictable throughout the document.",
+    "knowledgeCheck": [
+      { "q": "Interactive buttons require exporting as:", "options": ["Print PDF", "Interactive PDF", "JPEG", "EPUB only"], "answerIndex": 1, "explanation": "Only the Interactive PDF export preserves button and link functionality." },
+      { "q": "Where do you convert a shape into a button?", "options": ["Object > Effects", "Window > Interactive > Buttons and Forms", "File > Place", "Type > Character"], "answerIndex": 1, "explanation": "The Buttons and Forms panel converts objects and assigns actions." },
+      { "q": "Why place navigation buttons on a parent page?", "options": ["It's required by InDesign", "For consistent placement across every page", "It disables hyperlinks", "It reduces file size"], "answerIndex": 1, "explanation": "Parent-page placement keeps interactive navigation consistent throughout the document." }
+    ],
+    "checklist": ["I created a working navigation button", "I added at least one hyperlink", "I exported and tested an Interactive PDF"]
+  },
+  {
+    "id": "advanced-01",
+    "level": "L12",
+    "title": "Intro to GREP Styles",
+    "duration": "20 min",
+    "skills": ["Advanced", "GREP"],
+    "whatYoullLearn": "How to use pattern matching to automatically format text based on rules, not manual selection.",
+    "whyItMatters": "GREP turns repetitive manual formatting (like italicizing every phone number, or bolding every capitalized acronym) into an automatic, rule-based process.",
+    "concept": "GREP is a pattern-matching language (similar to regular expressions) built into InDesign. A GREP Style, attached to a Paragraph Style, automatically applies a Character Style to any text matching a pattern \u2014 like all-caps words, numbers, or specific punctuation.",
+    "interface": "Paragraph Styles panel > double-click a style > GREP Style tab. Or Edit > Find/Change > GREP tab for one-off pattern searches.",
+    "steps": [
+      "Create a Character Style called 'Emphasis' (e.g. bold, colored).",
+      "Open a Paragraph Style, go to its GREP Style tab, and click 'New GREP Style'.",
+      "Apply Style: choose 'Emphasis'.",
+      "In 'To Text', type a simple pattern like \\d+ to match any run of digits.",
+      "Apply the paragraph style to text containing numbers and watch numbers auto-format.",
+      "Try a second pattern, like [A-Z]{2,} to match all-caps acronyms."
+    ],
+    "tryItYourself": "Write a paragraph with several phone numbers, dates, and acronyms mixed in with normal text, then build a GREP style that formats just the acronyms.",
+    "challenge": "Create a paragraph style with two GREP rules: one that bolds any number, and one that italicizes any text inside parentheses.",
+    "commonMistakes": [
+      "Writing an overly broad pattern that accidentally matches unintended text.",
+      "Trying to memorize all of GREP at once \u2014 most real-world use only needs a handful of common patterns.",
+      "Forgetting GREP Styles only apply within a Paragraph Style, not globally on their own."
+    ],
+    "proTip": "You don't need to know GREP by heart \u2014 keep a personal cheat sheet of the 5\u201310 patterns you actually reuse (digits, capitalized words, parentheses, em dashes) and adapt them per project.",
+    "knowledgeCheck": [
+      { "q": "A GREP Style automatically applies:", "options": ["A paragraph style to a whole document", "A character style to text matching a pattern", "A table style", "A color swatch"], "answerIndex": 1, "explanation": "GREP Styles apply character formatting wherever a pattern matches, inside a paragraph style." },
+      { "q": "What does \\d+ typically match?", "options": ["Any letter", "One or more digits", "Whitespace", "Punctuation only"], "answerIndex": 1, "explanation": "\\d+ is a GREP/regex pattern matching one or more numeric digits." },
+      { "q": "GREP Styles are configured inside:", "options": ["Character Styles directly", "Paragraph Styles", "Object Styles", "Swatches panel"], "answerIndex": 1, "explanation": "GREP Style rules live in the GREP Style tab of a Paragraph Style." }
+    ],
+    "checklist": ["I created a GREP Style rule", "I tested it against real text", "I can explain what a basic pattern like \\d+ matches"]
+  },
+  {
+    "id": "automation-01",
+    "level": "L13",
+    "title": "Data Merge Basics",
+    "duration": "22 min",
+    "skills": ["Automation", "Data Merge"],
+    "whatYoullLearn": "How to generate many personalized documents (like certificates or name badges) from one template and a spreadsheet.",
+    "whyItMatters": "Manually creating 100 personalized certificates one at a time is a huge waste of time. Data Merge does it in minutes.",
+    "concept": "Data Merge connects a CSV file (rows of data, like names and dates) to placeholder fields in an InDesign layout. Each row becomes one generated document or page, with the placeholders swapped for that row's real data.",
+    "interface": "Window > Utilities > Data Merge opens the panel where you load a CSV and insert fields into your layout.",
+    "steps": [
+      "Prepare a CSV file with column headers like Name, Date, Award.",
+      "Open Window > Utilities > Data Merge and click 'Select Data Source' to load your CSV.",
+      "Design your certificate layout as normal, with a text frame for the recipient's name.",
+      "Click inside that text frame, then click the 'Name' field in the Data Merge panel to insert the placeholder.",
+      "Repeat for Date and Award fields.",
+      "Click 'Preview' in the Data Merge panel to see real data swapped in, and click through a few records.",
+      "Click 'Create Merged Document' to generate all records as pages (or separate documents)."
+    ],
+    "tryItYourself": "Build a tiny 3-row CSV by hand (3 names) and merge it into a simple one-line layout to see the whole pipeline work end to end.",
+    "challenge": "Design a certificate template and merge a 100-row CSV of names to generate 100 personalized certificates as a single multi-page document.",
+    "commonMistakes": [
+      "Mismatched column headers between the CSV and the fields InDesign expects, causing merge fields to fail silently.",
+      "Not proofing the merge preview before generating all records, missing a formatting issue that then repeats 100 times.",
+      "Forgetting that Data Merge text fields need enough room \u2014 a long name might overset if the frame was sized for a short one."
+    ],
+    "proTip": "Set text frames used for merged fields to Auto-Size (Object > Text Frame Options) so varying name lengths don't cause overset text across different records.",
+    "knowledgeCheck": [
+      { "q": "Data Merge connects InDesign to:", "options": ["A CSV file of data", "A Photoshop file", "A font library", "The Links panel"], "answerIndex": 0, "explanation": "Data Merge pulls rows from a CSV (or similar data file) into template placeholders." },
+      { "q": "Each row in the data source typically becomes:", "options": ["One paragraph style", "One generated record/page", "A swatch", "A GREP pattern"], "answerIndex": 1, "explanation": "Each data row generates one merged record in the output." },
+      { "q": "Why use Auto-Size on merge text frames?", "options": ["It's required to load the CSV", "To prevent overset text when data length varies", "It changes CMYK to RGB", "It creates bleed automatically"], "answerIndex": 1, "explanation": "Auto-sizing frames handle varying text lengths across records without overset." }
+    ],
+    "checklist": ["I connected a CSV data source", "I inserted merge fields into a layout", "I generated a merged document from multiple records"]
+  }
+]

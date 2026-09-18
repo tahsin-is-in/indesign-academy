@@ -1,0 +1,265 @@
+{
+  "exercises": [
+    {
+      "id": "ex-0-first-doc",
+      "title": "Your First InDesign Document",
+      "level": "L0",
+      "difficulty": "Beginner",
+      "time": "15 min",
+      "skills": ["Documents", "Export"],
+      "task": "Create a document, choose a page size, set margins, add pages, save the file, navigate it, and export a PDF.",
+      "requirements": ["Custom page size (not the default preset)", "Custom margins", "At least 2 pages", "Saved as .indd", "Exported as PDF"],
+      "instructions": ["Create a new document with a page size of your choice.", "Set margins to something other than the default.", "Add a second page via the Pages panel.", "Save the file.", "Export a PDF and open it to confirm it looks right."],
+      "hints": ["File > New > Document is where page size and margins live.", "The '+' icon at the bottom of the Pages panel adds pages."],
+      "commonMistakes": ["Forgetting to save before exporting", "Not noticing the page size shown in the title bar doesn't match what you intended"],
+      "selfAssessment": ["Did the document open with the size and margins I set?", "Does the exported PDF match what I see on screen?"]
+    },
+    {
+      "id": "ex-1-frame-basics",
+      "title": "Three Frames, No Overlap",
+      "level": "L1",
+      "difficulty": "Beginner",
+      "time": "10 min",
+      "skills": ["Frames", "Alignment"],
+      "task": "Create a text frame, an image frame, and a plain shape on one page, arranged without overlapping.",
+      "requirements": ["One text frame with real content", "One empty image frame (X visible)", "One filled shape", "No overlapping frames"],
+      "instructions": ["Use the Rectangle Frame tool for the image frame.", "Use the Type tool for the text frame.", "Use the Rectangle tool for the shape.", "Align all three using Object > Align."],
+      "hints": ["Press F for frame tool, T for type tool, R for rectangle.", "Shift-click to select multiple objects before aligning."],
+      "commonMistakes": ["Accidentally nesting one frame inside another", "Using the wrong tool and getting a shape when you wanted a text frame"],
+      "selfAssessment": ["Can I tell each frame type apart at a glance?", "Are the frames aligned to a consistent edge?"]
+    },
+    {
+      "id": "ex-2-format-paragraph",
+      "title": "Format a Raw Paragraph",
+      "level": "L1",
+      "difficulty": "Beginner",
+      "time": "15 min",
+      "skills": ["Character formatting", "Paragraph formatting"],
+      "task": "Take an unformatted block of placeholder text and turn it into a readable, styled paragraph with a heading.",
+      "requirements": ["A clear heading, larger and bolder than body text", "Comfortable leading (~120% of font size)", "Consistent alignment", "First-line indent on body paragraphs after the first"],
+      "instructions": ["Paste in several paragraphs of placeholder text.", "Format a heading at the top.", "Set leading and alignment for the body text.", "Apply a first-line indent using the Paragraph panel, not spaces."],
+      "hints": ["Use Ctrl/Cmd+A to select all text before applying body-wide settings.", "First-line indent is a specific Paragraph panel field, not a tab character."],
+      "commonMistakes": ["Using spacebar/tab for indents instead of the real setting", "Justifying a narrow column and getting ugly spacing"],
+      "selfAssessment": ["Is the heading clearly distinguishable from body text?", "Does the paragraph read comfortably at arm's length?"]
+    },
+    {
+      "id": "ex-3-image-fitting",
+      "title": "Three Frames, One Photo",
+      "level": "L1",
+      "difficulty": "Beginner",
+      "time": "10 min",
+      "skills": ["Images", "Fitting"],
+      "task": "Place the same image into a square, a tall, and a wide frame, and fit each proportionally without distortion.",
+      "requirements": ["Same source image in all 3 frames", "No stretching or distortion in any frame", "Each crop shows the subject sensibly"],
+      "instructions": ["Draw 3 frames of different proportions.", "Place the same image into each.", "Apply Fill Frame Proportionally to each.", "Reposition the image within each frame using the Direct Selection tool if needed."],
+      "hints": ["Object > Fitting has every fitting option.", "Direct Selection (A) lets you drag the image inside its frame."],
+      "commonMistakes": ["Using Fit Content to Frame, which stretches the image", "Not checking that the subject is still visible after cropping"],
+      "selfAssessment": ["Does the image look natural, not stretched, in all three frames?", "Is the subject still recognizable in the tightest crop?"]
+    },
+    {
+      "id": "ex-4-typography-fix",
+      "title": "Typography Challenge: Fix This Paragraph",
+      "level": "L2",
+      "difficulty": "Intermediate",
+      "time": "20 min",
+      "skills": ["Typography", "Hierarchy"],
+      "task": "You're given a badly set paragraph: single font, no hierarchy, tight leading, fully justified in a narrow column. Improve hierarchy, spacing, alignment, and overall readability.",
+      "requirements": ["Add at least one level of visual hierarchy", "Fix leading to a comfortable reading value", "Reconsider alignment given the column width", "Fix any obviously loose or tight kerning on headline-sized text"],
+      "instructions": ["Identify what's wrong before changing anything \u2014 write down 3 issues.", "Fix leading first.", "Reconsider justification vs. left alignment for the column width.", "Add a simple heading with real hierarchy if one is missing."],
+      "hints": ["Narrow columns usually read better left-aligned than justified.", "120% of font size is a solid leading starting point."],
+      "commonMistakes": ["Changing five things at once without checking each improvement individually", "Over-correcting leading to be too loose"],
+      "selfAssessment": ["Would a stranger find this easier to read than the original?", "Is there a clear point of entry (a heading or lead-in) to the paragraph?"]
+    },
+    {
+      "id": "ex-5-grid-layout",
+      "title": "3-Column Grid Poster",
+      "level": "L3",
+      "difficulty": "Intermediate",
+      "time": "25 min",
+      "skills": ["Grids", "Layout", "Composition"],
+      "task": "Design an A4 poster using a strict 3-column grid: headline, subtitle, body, contact info, 1 image, 3mm bleed, max 2 fonts.",
+      "requirements": ["A4 portrait", "3-column grid", "2 fonts maximum", "1 image", "Headline, subtitle, body, contact info all present", "3mm bleed"],
+      "instructions": ["Set up the document with a 3-column grid via Layout > Margins and Columns.", "Block in your headline spanning all 3 columns.", "Place the image spanning 1\u20132 columns.", "Fit body text and contact info into the remaining space.", "Check every element aligns to a column guide."],
+      "hints": ["Turn on View > Grids & Guides > Show Guides while working.", "Snap to Guides (View > Grids & Guides) makes alignment automatic."],
+      "commonMistakes": ["Setting up the grid, then eyeballing placement anyway", "Using more than 2 fonts out of habit"],
+      "selfAssessment": ["Does every element align to at least one grid line?", "Is there a single clear focal point?"]
+    },
+    {
+      "id": "ex-6-parent-pages",
+      "title": "Build a Repeating Footer System",
+      "level": "L4",
+      "difficulty": "Intermediate",
+      "time": "20 min",
+      "skills": ["Parent Pages", "Page numbers"],
+      "task": "Build an 8-page document where every page automatically shows a footer with the document title and an automatic page number.",
+      "requirements": ["A parent page with a footer text frame", "Automatic page number marker (not typed manually)", "Applied to all 8 pages", "At least one intentional override on one page"],
+      "instructions": ["Edit the parent page and build the footer.", "Insert the automatic page number marker.", "Apply the parent to all document pages.", "Override the footer on one page intentionally (Ctrl/Cmd+Shift+click) and change its color there only."],
+      "hints": ["Type > Insert Special Character > Markers > Current Page Number.", "Overrides need Ctrl/Cmd+Shift+click on the object to break the link to the parent."],
+      "commonMistakes": ["Typing page numbers manually instead of using the marker", "Editing a document page directly when meaning to edit the parent"],
+      "selfAssessment": ["Do page numbers update correctly across all 8 pages?", "Can I explain the difference between the parent and an override?"]
+    },
+    {
+      "id": "ex-7-style-system",
+      "title": "Format 20 Paragraphs, 3 Styles Only",
+      "level": "L5",
+      "difficulty": "Advanced",
+      "time": "30 min",
+      "skills": ["Paragraph Styles", "Character Styles"],
+      "task": "Format a document of 20 mixed headings and paragraphs using no more than 3 paragraph styles, applied consistently, with zero manual (local) overrides.",
+      "requirements": ["3 paragraph styles total", "Applied to all 20 paragraphs", "Zero local formatting overrides", "Updating one style visibly cascades to every instance"],
+      "instructions": ["Create Heading, Subheading, and Body paragraph styles from your best-formatted examples.", "Apply each style to the matching paragraphs throughout the document.", "Resist the urge to manually tweak anything \u2014 fix the style instead.", "Test: change the Body style's leading and confirm all body paragraphs update."],
+      "hints": ["The Paragraph Styles panel shows a '+' next to a style name if local overrides exist.", "Clear Overrides (Alt/Option-click the style) removes stray manual formatting."],
+      "commonMistakes": ["Creating a 4th or 5th style out of convenience instead of solving the problem within 3", "Leaving local overrides that make future updates unpredictable"],
+      "selfAssessment": ["Does the Paragraph Styles panel show zero '+' override indicators?", "Did changing one style update every paragraph using it?"]
+    },
+    {
+      "id": "ex-8-thread-overset",
+      "title": "Zero Overset Across 3 Pages",
+      "level": "L6",
+      "difficulty": "Advanced",
+      "time": "20 min",
+      "skills": ["Text threading", "Overset text"],
+      "task": "Take a long article and thread it across 3 pages with zero overset text remaining.",
+      "requirements": ["Text flows across exactly 3 threaded frames", "Zero red '+' overset icons", "Text threads visible and logical in reading order"],
+      "instructions": ["Paste a long article into a single frame so it overflows.", "Click the red '+' and thread into a second frame on page 2.", "Repeat for a third frame on page 3.", "Turn on View > Extras > Show Text Threads to visually confirm the order."],
+      "hints": ["The out-port is the small square in a frame's bottom-right corner.", "Show Text Threads only displays when the connected frames are selected."],
+      "commonMistakes": ["Threading frames out of reading order", "Shrinking font size to avoid threading instead of doing it properly"],
+      "selfAssessment": ["Is there any red '+' remaining anywhere in the document?", "Does the text read in the correct order across all 3 frames?"]
+    },
+    {
+      "id": "ex-9-price-table",
+      "title": "Styled Price Table",
+      "level": "L7",
+      "difficulty": "Intermediate",
+      "time": "20 min",
+      "skills": ["Tables", "Table Styles"],
+      "task": "Build a 4-column, 8-row price table with a distinct header row and alternating row colors.",
+      "requirements": ["4 columns, 8 rows including header", "Header row visually distinct (bold/fill)", "Alternating fills on data rows", "Saved as a reusable Table Style"],
+      "instructions": ["Insert a table into a text frame with Table > Insert Table.", "Fill in header labels and sample data.", "Style the header row with bold text and a fill color.", "Apply Table > Table Options > Alternating Fills.", "Save the formatting as a new Table Style."],
+      "hints": ["Select the whole header row before applying fill/bold, not cell by cell.", "Table Styles are saved from the Table Styles panel's 'New Style' option."],
+      "commonMistakes": ["Manually formatting each row instead of using Alternating Fills", "Forgetting to save the formatting as a reusable style"],
+      "selfAssessment": ["Is the header instantly distinguishable from data rows?", "Could I apply this exact style to a brand-new table in one click?"]
+    },
+    {
+      "id": "ex-10-preflight-brochure",
+      "title": "Zero-Error Preflight",
+      "level": "L10",
+      "difficulty": "Advanced",
+      "time": "25 min",
+      "skills": ["Preflight", "Print Production"],
+      "task": "Take a deliberately broken file (missing link, overset text, low-res image) and fix every issue until Preflight shows a green dot.",
+      "requirements": ["Zero Preflight errors", "All images above 300 effective PPI", "Zero overset text", "Correct bleed applied"],
+      "instructions": ["Open Window > Output > Preflight and review every listed error.", "Click each error to jump directly to the problem.", "Fix links, resize/replace low-res images, and resolve overset text.", "Confirm the Preflight indicator turns green."],
+      "hints": ["Missing links can be fixed via the Links panel's 'Relink' button.", "Low effective PPI usually means the image was scaled up too much \u2014 shrink the frame or replace the image."],
+      "commonMistakes": ["Fixing the visible errors but missing one hidden on another page", "Ignoring a warning because 'it looks fine on screen'"],
+      "selfAssessment": ["Does the Preflight panel show a green dot with zero errors?", "Would this file be safe to send to a commercial printer?"]
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "diag-1",
+      "title": "What's Wrong With This Business Card?",
+      "issue": "Text runs almost to the very edge of the card with no visible safe margin, and the background color stops short of the trim edge on two sides.",
+      "reveal": "The text has no safe margin (risking being trimmed off) and the background isn't extended into the bleed, which will leave a thin white sliver after cutting. Fix: pull text in from the trim edge by at least 3\u20135mm, and extend the background fully into the bleed area."
+    },
+    {
+      "id": "diag-2",
+      "title": "What's Wrong With This Paragraph?",
+      "issue": "A dense block of fully justified text in a narrow single column, tight leading, no paragraph spacing, and no heading.",
+      "reveal": "Justification in a narrow column causes uneven word spacing; tight leading with no paragraph breaks makes it exhausting to read; and there's no entry point (heading) to orient the reader. Fix: switch to left alignment, loosen leading to ~120% of font size, and add a clear heading."
+    },
+    {
+      "id": "diag-3",
+      "title": "What's Wrong With This Poster?",
+      "issue": "Three different focal points compete for attention \u2014 a large headline, an equally large image, and a bright colored shape \u2014 none clearly dominant.",
+      "reveal": "Without one dominant element, the eye doesn't know where to look first. Fix: choose one hero element (usually the headline or the image, not both) and reduce the size or contrast of the other elements so they support rather than compete."
+    },
+    {
+      "id": "diag-4",
+      "title": "What's Wrong With This Table?",
+      "issue": "Every row looks identical \u2014 same weight, same color, no visual separation between the header and data.",
+      "reveal": "Without contrast between header and data rows, the table is hard to scan quickly. Fix: bold and/or fill the header row distinctly, and consider alternating fills on data rows to help the eye track across."
+    },
+    {
+      "id": "diag-5",
+      "title": "What's Wrong With This Print File?",
+      "issue": "The Preflight panel shows a red dot with 4 warnings, but the file was exported anyway.",
+      "reveal": "Ignoring Preflight warnings risks sending a broken file to print \u2014 missing fonts substitute silently, low-res images print blurry, and overset text simply disappears. Fix: resolve every Preflight warning before export, every time."
+    },
+    {
+      "id": "diag-6",
+      "title": "What's Wrong With This Flyer's Type?",
+      "issue": "The headline, subtitle, and body text are all the same size and weight, differentiated only by slightly different fonts.",
+      "reveal": "Without size or weight contrast, there's no real hierarchy \u2014 the reader has to work to figure out what matters most. Fix: build hierarchy through deliberate size and weight contrast, not font-swapping alone."
+    }
+  ],
+  "recreate": [
+    {
+      "id": "rec-1",
+      "title": "Recreate: Minimalist Event Poster",
+      "reference": "A large centered headline in a bold sans-serif, a thin horizontal rule beneath it, and small centered date/location text below that. Generous white margin on all sides.",
+      "dimensions": "A3 portrait",
+      "tools": ["Type tool", "Paragraph styles", "Alignment"],
+      "difficulty": "Beginner",
+      "timeLimit": "20 min",
+      "hints": ["Center alignment plus generous whitespace does most of the work here.", "The rule is a simple stroked line, not a frame border."],
+      "evaluationChecklist": ["Headline is the clear focal point", "Rule is thin and precisely centered", "Margins feel generous, not cramped", "Overall composition matches the reference's balance"]
+    },
+    {
+      "id": "rec-2",
+      "title": "Recreate: Editorial Two-Column Article",
+      "reference": "A magazine-style spread: a large pull-quote breaking across two columns, a drop cap on the opening paragraph, and an image with tight text wrap in the lower column.",
+      "dimensions": "A4 landscape (spread)",
+      "tools": ["Text threading", "Text wrap", "Drop caps", "Paragraph styles"],
+      "difficulty": "Intermediate",
+      "timeLimit": "35 min",
+      "hints": ["Drop caps are set in the Paragraph panel's Drops and Nested Styles section.", "The pull-quote is a separate text frame layered over the columns, not part of the threaded story."],
+      "evaluationChecklist": ["Two columns are evenly threaded with no overset", "Drop cap is applied correctly, not manually resized text", "Pull-quote reads as a distinct visual break", "Image text wrap looks intentional, not accidental"]
+    },
+    {
+      "id": "rec-3",
+      "title": "Recreate: Grid-Based Price List",
+      "reference": "A restaurant-style price list: section headers in a heavier weight, item names left-aligned, prices right-aligned with a dotted leader connecting them.",
+      "dimensions": "A5 portrait",
+      "tools": ["Tabs and leaders", "Paragraph styles"],
+      "difficulty": "Intermediate",
+      "timeLimit": "25 min",
+      "hints": ["Dotted leaders are configured in the Tabs panel (Type > Tabs), not typed manually as periods.", "Consistent spacing between items matters as much as the alignment itself."],
+      "evaluationChecklist": ["All prices align in a single vertical line", "Leader dots are evenly spaced, not manually typed", "Section headers are visually distinct from items"]
+    },
+    {
+      "id": "rec-4",
+      "title": "Recreate: Cover Page With Registration Marks Motif",
+      "reference": "A bold cover treatment using crop-mark-style corner ticks as a graphic device framing the title, echoing real print registration marks.",
+      "dimensions": "A4 portrait",
+      "tools": ["Line tool", "Grouping", "Typography"],
+      "difficulty": "Advanced",
+      "timeLimit": "30 min",
+      "hints": ["Small precise line segments at each corner, grouped, recreate the crop-mark motif.", "Keep the title's baseline aligned to where real crop marks would sit for authenticity."],
+      "evaluationChecklist": ["Corner ticks are consistent in length and weight", "Title placement relates logically to the tick marks", "Overall composition feels intentional, not decorative for its own sake"]
+    }
+  ],
+  "daily": {
+    "5min": [
+      "Fix the kerning on a single headline word.",
+      "Change one paragraph from justified to left-aligned and compare readability.",
+      "Apply a fitting option to a stretched image.",
+      "Insert an automatic page number marker into a text frame.",
+      "Create one new paragraph style from existing formatted text."
+    ],
+    "15min": [
+      "Build a 3-column grid and place 3 text blocks aligned to it.",
+      "Thread a long paragraph across two frames with zero overset.",
+      "Create a simple 4x4 table with a styled header row.",
+      "Fix a badly kerned, badly leaded headline-and-subhead pair.",
+      "Set up bleed on an existing document and extend one background element into it."
+    ],
+    "30min": [
+      "Design a business card from a one-line client brief you invent yourself.",
+      "Build a parent page with footer, page number, and running header, then apply it to 5 pages.",
+      "Take a wall of unformatted text and turn it into a styled article with 3 paragraph styles.",
+      "Recreate a poster layout from a reference image using only type and a rule line.",
+      "Preflight and export a print-ready PDF from an existing project file."
+    ]
+  }
+}
