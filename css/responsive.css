@@ -17,7 +17,7 @@
   }
   .sidebar.open { transform: translateX(0); }
   .sidebar-scrim {
-    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 40;
+    position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 40;
   }
   .sidebar-scrim.open { display: block; }
 
